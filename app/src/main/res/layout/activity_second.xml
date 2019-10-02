@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/viewname"
+        android:layout_width="118dp"
+        android:layout_height="63dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="121dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="countUp"
+        android:text="@string/count_up"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="121dp"
+        android:layout_height="92dp"
+        android:backgroundTint="#F44336"
+        android:onClick="countDown"
+        android:text="@string/count_down"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <TextView
+        android:id="@+id/showcount"
+        android:layout_width="289dp"
+        android:layout_height="595dp"
+        android:background="#008EFF"
+        android:backgroundTint="#EAFF00"
+        android:gravity="center"
+        android:text="@string/nampil"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="121dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
